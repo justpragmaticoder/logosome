@@ -10,7 +10,7 @@ function runTCPServer(port: number | string): net.Server {
     return net.createServer(socket => {
         const userAddress: string = socket.remoteAddress.split(":")[3];
         const userID: string = shortid.generate();
-        const dirPath = getDirName(userID, userAddress);
+        const dirPath: string = getDirName(userID, userAddress);
         mkdirp(dirPath, (err) => {
             if (err) return console.error(err);
             turnLogsToFile(dirPath + getFileName(userID, userAddress), socket);

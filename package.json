@@ -1,0 +1,23 @@
+{
+  "name": "logosome",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Vasil Protcykovich",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^10.7.1",
+    "express": "^4.16.3",
+    "mkdirp": "^0.5.1",
+    "net": "^1.0.2",
+    "path": "^0.12.7",
+    "shortid": "^2.2.13"
+  },
+  "dependencies": {}
+}
